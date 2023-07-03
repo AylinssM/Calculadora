@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="estiloCalculadora.css">
+    <script src="numeros.js"></script>
+    <script src="operaciones.js"></script>
+    <script src="otrosBotones.js"></script>
+</head>
+<body>
+    <h1>CALCULADORA BÁSICA</h1>
+    <div id="botonOnOff">
+        <input id="on" class="boton" type="button" value="ENCENDIDO" onclick="encender()">
+        <input id="off" class="boton" type="button" value="APAGADO" onclick="apagar()">
+    </div>
+    <fieldset id="calculadora">
+        <input type="button" class="botonCalculadora" value="1" onclick="uno()">
+        <input type="button" class="botonCalculadora" value="2" onclick="dos()">
+        <input type="button" class="botonCalculadora" value="3" onclick="tres()">
+        <input type="button" class="botonCalculadora" value="4" onclick="cuatro()">
+        <input type="button" class="botonCalculadora" value="5" onclick="cinco()">
+        <input type="button" class="botonCalculadora" value="6" onclick="seis()">
+        <input type="button" class="botonCalculadora" value="7" onclick="siete()">
+        <input type="button" class="botonCalculadora" value="8" onclick="ocho()">
+        <input type="button" class="botonCalculadora" value="9" onclick="nueve()">
+        <input type="button" class="botonCalculadora" value="0" onclick="cero()">
+        <input type="text" name="" id="numero1" disabled>
+        <hr>
+        <input type="button" class="botonCalculadora" value="1" onclick="unoB()">
+        <input type="button" class="botonCalculadora" value="2" onclick="dosB()">
+        <input type="button" class="botonCalculadora" value="3" onclick="tresB()">
+        <input type="button" class="botonCalculadora" value="4" onclick="cuatroB()">
+        <input type="button" class="botonCalculadora" value="5" onclick="cincoB()">
+        <input type="button" class="botonCalculadora" value="6" onclick="seisB()">
+        <input type="button" class="botonCalculadora" value="7" onclick="sieteB()">
+        <input type="button" class="botonCalculadora" value="8" onclick="ochoB()">
+        <input type="button" class="botonCalculadora" value="9" onclick="nueveB()">
+        <input type="button" class="botonCalculadora" value="0" onclick="ceroB()">
+        <input type="text" name="" id="numero2" disabled>
+        <hr>
+        <input type="button" class="botonOperaciones" value="+" onclick="suma()">
+        <input type="button" class="botonOperaciones" value="-" onclick="resta()">
+        <input type="button" class="botonOperaciones" value="*" onclick="producto()">
+        <input type="button" class="botonOperaciones" value="/" onclick="division()">
+        <input type="reset" class="botonOperaciones" value="C" onclick="resetCal()">
+        <input type="number" name="" id="result" value="0" disabled>
+    </fieldset>
+</body>
+</html>
